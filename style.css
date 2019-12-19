@@ -1,0 +1,63 @@
+html{
+  background-image:url('https://www.interfax.ru/ftproot/textphotos/2017/07/28/cafe700.jpg');
+  background-size: 1550px 750px;
+}
+.field {clear:both; text-align:left; line-height:25px;}
+label {float:left; padding-right:10px;}
+.main {float:left}
+
+form{
+    width:200px;
+    hight:200;
+}
+input[type="text"], input[type="password"] {
+    width:200px;
+    font-size:18px;
+    margin-bottom:25px;
+    padding-left:10px;
+}
+.fieldimia {
+    margin-left: 160px;
+}
+p{
+    color:#FFFF00;
+    font-size:30px;
+    line-height:30px;
+}
+a{
+    color:#FFFF00;
+}
+input.short {
+    width: 6em;
+}
+label {
+    text-align: right;
+}
+.submitField {
+    margin-left: 110px; /* Сдвигаем вправо под поля */
+}
+button {
+  padding:10px 30px;
+  heigth:50px;
+  color:#000000;
+  background:#FFFFFF;
+  border:none;
+  top:10%;
+}
+h1{
+    color:#FFFF00;
+    font-size:70px;
+    line-height:70px;
+    text-align: right;
+}
+label{
+  color:#FFFF00;
+}
+.form.register-form{
+    display: none;
+}
+
+
+
+
+
