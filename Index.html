@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script src="js/true.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+
+    function dis1(form) {
+        if (form.style.display == "none") {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
+    }
+</script>
+    <script>
+        function dis2(form2) {
+            if (form2.style.display == "none") {
+                form2.style.display = "block";
+            } else {
+                form2.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<li>Регистрация</li>
+<li>Авторизация</li>
+<h1>Вас приветствует</h1>
+<h1>Lavrik Indestris</h1>
+<input type="button" value="Регистрация" onclick="dis1(document.getElementById('form1'))" />
+<fieldset>
+<form1 id="form1" style="display: none;">
+    <p>Регистрация</p>
+    <div class="item">
+        <label style="">Имя:</label>
+        <input  name="name" type="text">
+    </div>
+    <div class="item">
+        <label style="">Фамилия:</label>
+        <input  name="name" type="text">
+    </div>
+    <div class="item">
+        <label >Логин  :</label>
+        <input  name="login" type="text" Login="login1">
+    </div>
+    <div class="item">
+        <label >Пароль :</label>
+        <input  name="password" type="password" Password="password1">
+    </div>
+    <input type="button" name="next" class="next action-button" value="Next" />
+    <p><button onClick="(((dis1(document.getElementById('form1'))).close) && ((dis2(document.getElementById('form2')))))">Зарегистрироваться</button></p>
+</form1>
+<input type="button" value="Авторизация" onclick="dis2(document.getElementById('form2'))"/>
+<form2 id="form2" style="display: none;">
+    <p>Авторизация</p>
+    <div class="item">
+        <label >Логин  :</label>
+        <input  name="login" type="text" Login="login2">
+     </div>
+    <div class="item">
+        <label >Пароль :</label>
+        <input  name="password" type="password" Password="password2">
+    </div>
+    <form>
+        <p><button onClick='
+if(login2 == login1 && password2 == password1)
+{
+	action="index(avt).html";
+}
+else
+{
+	alert("Error Password or Username")
+}
+'>Long In</button></p>
+    </form>
+</form2>
+</fieldset>
+</body>
+</html>
+
+
+
+
